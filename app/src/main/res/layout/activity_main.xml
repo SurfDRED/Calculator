@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        style="@style/Toolbar"
+        android:layout_width="match_parent"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/calculator_toolbar"
+        app:subtitle="@string/SubTitle"
+        app:subtitleTextAppearance="@style/Toolbar.SubTitle"
+        app:title="@string/Title"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <LinearLayout
+        android:id="@+id/BaseLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/background_light"
+            android:text="@string/txtDisplay"
+            android:textAlignment="viewEnd"
+            android:textColor="@android:color/background_dark"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/WorkLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <include
+                android:id="@+id/btnSeven"
+                layout="@layout/btn_style_grey"
+                android:text="@string/btnTextSeven" />
+
+            <include
+                android:id="@+id/btnEight"
+                layout="@layout/btn_style_grey"
+                android:text="@string/btnTextEight" />
+
+            <include
+                android:id="@+id/btnNine"
+                layout="@layout/btn_style_grey"
+                android:text="@string/btnTextNine" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <include
+                android:id="@+id/btnFour"
+                layout="@layout/btn_style_grey"
+                android:text="@string/btnTextFour" />
+
+            <include
+                android:id="@+id/btnFive"
+                layout="@layout/btn_style_grey"
+                android:text="@string/btnTextFive" />
+
+            <include
+                android:id="@+id/btnSix"
+                layout="@layout/btn_style_grey"
+                android:text="@string/btnTextSix" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <include
+                android:id="@+id/btnOne"
+                layout="@layout/btn_style_grey"
+                android:text="@string/btnTextOne" />
+
+            <include
+                android:id="@+id/btnTwo"
+                layout="@layout/btn_style_grey"
+                android:text="@string/btnTextTwo" />
+
+            <include
+                android:id="@+id/btnThree"
+                layout="@layout/btn_style_grey"
+                android:text="@string/btnTextThree" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <include
+                android:id="@+id/btnZero"
+                layout="@layout/btn_style_grey"
+                android:text="@string/btnTextZero" />
+
+            <include
+                android:id="@+id/btnPoint"
+                layout="@layout/btn_style_grey_weight"
+                android:text="@string/btnTextPoint" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

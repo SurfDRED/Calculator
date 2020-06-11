@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Интерфейс калькулятора</string>
+    <string name="Title">Интерфейс калькулятора</string>
+    <string name="SubTitle">Ячменцев Д. Н.</string>
+    <string name="btnTextSeven">7</string>
+    <string name="btnTextEight">8</string>
+    <string name="btnTextNine">9</string>
+    <string name="btnTextFour">4</string>
+    <string name="btnTextFive">5</string>
+    <string name="btnTextSix">6</string>
+    <string name="btnTextOne">1</string>
+    <string name="btnTextTwo">2</string>
+    <string name="btnTextThree">3</string>
+    <string name="btnTextPoint">.</string>
+    <string name="btnTextZero">0</string>
+    <string name="txtDisplay"></string>
+</resources>
